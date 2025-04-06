@@ -1,37 +1,56 @@
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Blockchain Development",
     description:
-      "Creating responsive, interactive user interfaces with modern frameworks and technologies.",
-    icon: "code",
+      "Building dApps, DeFi solutions, and smart contracts on various blockchain platforms.",
+    icon: "cpu.png",
     skills: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Three.js",
-      "WebGL",
+      "Solidity",
+      "Vyper",
+      "web3.py",
+      "web3.js",
+      "Ethereum, Arbitrum, zkSync, ...",
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    description:
+      "Implementing intelligent systems and algorithms for data analysis and automation, and developing chatbots for enhanced user interaction.",
+    icon: "brain.png",
+    skills: [
+      "Python",
+      "HuggingFace",
+      "OpenAI",
+      "Natural Language Processing",
+      "Vercel",
     ],
   },
   {
     title: "Backend Systems",
     description:
       "Building robust, scalable server-side applications and APIs to power complex applications.",
-    icon: "cpu",
-    skills: ["Node.js", "Python", "GraphQL", "PostgreSQL", "Redis", "Docker"],
+    icon: "server.png",
+    skills: [
+      "Python",
+      "Java",
+      "Node.js",
+      "SQL",
+      "RESTful APIs",
+      "Frameworks (Flask, Django, Spring Boot)",
+    ],
   },
   {
-    title: "Emerging Technologies",
+    title: "Frontend Development",
     description:
-      "Exploring and implementing cutting-edge technologies to create innovative solutions.",
-    icon: "layers",
+      "Creating responsive, interactive user interfaces with modern frameworks and technologies.",
+    icon: "code.png",
     skills: [
-      "Machine Learning",
-      "WebXR",
-      "Blockchain",
-      "IoT",
-      "Edge Computing",
-      "Quantum Computing",
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML/CSS",
+      "JavaScript",
     ],
   },
 ];
