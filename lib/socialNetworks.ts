@@ -2,7 +2,7 @@ export const socialNetworks = [
   {
     name: "Github",
     url: "https://github.com/SlavkoMuzdeka",
-    icon: "github.png",
+    icon: "github_sm.png",
   },
   {
     name: "X",

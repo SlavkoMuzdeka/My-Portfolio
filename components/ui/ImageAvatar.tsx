@@ -1,27 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function HeroAvatar() {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
-      {/* Outer ring */}
+      {/* Outer border */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute w-full h-full rounded-full border-2 border-purple-500/30"
-      />
-
-      {/* Middle ring */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.6, rotate: 0 }}
-        animate={{ opacity: 1, scale: 0.8, rotate: 360 }}
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Number.POSITIVE_INFINITY,
-        }}
-        className="absolute w-4/5 h-4/5 rounded-full border border-cyan-400/20 flex items-center justify-center"
+        className="absolute w-full h-full rounded-xl border border-slate-700"
       />
 
       {/* Inner content */}
@@ -29,32 +19,33 @@ export default function HeroAvatar() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="relative w-4/5 h-4/5 rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-600/20 backdrop-blur-sm border border-cyan-500/30 flex items-center justify-center overflow-hidden"
+        className="relative w-4/5 h-4/5 rounded-xl bg-slate-800/80 backdrop-blur-sm border border-slate-700 flex items-center justify-center overflow-hidden"
       >
         {/* Profile image */}
-        <div className="relative w-full h-full rounded-full overflow-hidden">
+        <div className="relative w-full h-full rounded-xl overflow-hidden">
           <Image
-            src="./me4.png"
+            src="./softwareengineer.png"
             alt="Profile"
             width={100}
             height={100}
             className="object-cover w-full h-full"
           />
 
-          {/* Futuristic overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-purple-600/30 to-transparent" />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
 
-          {/* Scanning effect */}
-          <motion.div
-            initial={{ top: "100%" }}
-            animate={{ top: ["100%", "0%", "100%"] }}
-            transition={{
-              duration: 4,
-              repeat: Number.POSITIVE_INFINITY,
-              repeatDelay: 1,
-            }}
-            className="absolute left-0 right-0 h-px bg-cyan-400/70 shadow-[0_0_10px_2px_rgba(34,211,238,0.7)]"
-          />
+          {/* Code-like overlay */}
+          <div className="absolute inset-0 mix-blend-overlay opacity-10">
+            <div className="h-full w-full overflow-hidden font-mono text-[6px] text-blue-300 p-2">
+              {Array(20)
+                .fill(0)
+                .map((_, i) => (
+                  <div key={i} className="whitespace-nowrap">
+                    {`function developer() { const skills = ['JavaScript', 'TypeScript', 'React', 'Node.js']; return skills.map(skill => implement(skill)); }`}
+                  </div>
+                ))}
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>
