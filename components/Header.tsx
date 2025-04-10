@@ -69,29 +69,6 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/SlavkoMuzdeka"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-slate-400 hover:text-white"
-            >
-              <Github className="w-5 h-5" />
-            </Button>
-          </a>
-          <a href="mailto:muzdekaslavko@gmail.com">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-slate-400 hover:text-white"
-            >
-              <Mail className="w-5 h-5" />
-            </Button>
-          </a>
-
           {/* Mobile menu button */}
           <Button
             variant="ghost"

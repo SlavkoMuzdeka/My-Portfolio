@@ -79,7 +79,7 @@ const AboutSection: React.FC<ProjectSectionProps> = ({ aboutRef }) => {
                 </div>
               </div>
               <div className="bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-500 mb-1">98%</div>
+                <div className="text-2xl font-bold text-blue-500 mb-1">95%</div>
                 <div className="text-sm text-slate-400">
                   Client Satisfaction
                 </div>

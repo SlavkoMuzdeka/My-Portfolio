@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Button from "./ui/Button";
 import projects from "@/lib/projects";
 import { motion } from "framer-motion";
@@ -11,6 +12,9 @@ interface ProjectSectionProps {
 }
 
 const ProjectSection: React.FC<ProjectSectionProps> = ({ projectsRef }) => {
+  // Only show the first 4 projects on the home page
+  const featuredProjects = projects.slice(0, 4);
+
   return (
     <section ref={projectsRef} className="relative py-20 md:py-32">
       <div className="container mx-auto px-4 z-10">
@@ -30,26 +34,28 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projectsRef }) => {
             expertise across various domains and technologies.
           </p>
           {/* Coming Soon notice */}
-          <div className="mt-4 text-slate-400 text-sm italic">
+          {/* <div className="mt-4 text-slate-400 text-sm italic">
             More projects coming soon...
-          </div>
+          </div> */}
         </motion.div>
 
-        {/* <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+        <div className="grid md:grid-cols-2 gap-8">
+          {featuredProjects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
 
         <div className="mt-12 text-center">
-          <Button
-            variant="outline"
-            className="border-slate-700 text-slate-300 hover:bg-slate-800"
-          >
-            View All Projects
-            <ExternalLink className="ml-2 w-4 h-4" />
-          </Button>
-        </div> */}
+          <Link href="/projects">
+            <Button
+              variant="outline"
+              className="border-slate-700 text-slate-300 hover:bg-slate-800"
+            >
+              View All Projects
+              <ExternalLink className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
