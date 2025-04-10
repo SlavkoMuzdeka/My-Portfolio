@@ -6,22 +6,13 @@ import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
 import HomeSection from "@/components/home-section";
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import AboutSection from "@/components/about-section";
+import SkillsSection from "@/components/skills-section";
+import { AnimatePresence, motion } from "framer-motion";
 import ContactSection from "@/components/contact-section";
 import ParticleField from "@/components/ui/particle-field";
 import ProjectsSection from "@/components/projects-section";
-import {
-  X,
-  Zap,
-  Mail,
-  User,
-  Code,
-  Github,
-  MessageSquare,
-  Terminal,
-} from "lucide-react";
-import SkillsSection from "@/components/skills-section";
-import AboutSection from "@/components/about-section";
+import { Zap, User, Code, MessageSquare, Terminal, X } from "lucide-react";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -32,6 +23,10 @@ export default function Home() {
   const skillsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,18 +64,30 @@ export default function Home() {
   };
 
   const navItems = [
-    { name: "Home", ref: homeRef, icon: <Terminal className="w-4 h-4" /> },
+    {
+      name: "Home",
+      ref: homeRef,
+      icon: <Terminal className="w-4 h-4 text-blue-400" />,
+    },
     {
       name: "Projects",
       ref: projectsRef,
-      icon: <Code className="w-4 h-4" />,
+      icon: <Code className="w-4 h-4 text-purple-400" />,
     },
-    { name: "Skills", ref: skillsRef, icon: <Zap className="w-4 h-4" /> },
-    { name: "About", ref: aboutRef, icon: <User className="w-4 h-4" /> },
+    {
+      name: "Skills",
+      ref: skillsRef,
+      icon: <Zap className="w-4 h-4 text-yellow-400" />,
+    },
+    {
+      name: "About",
+      ref: aboutRef,
+      icon: <User className="w-4 h-4 text-cyan-400" />,
+    },
     {
       name: "Contact",
       ref: contactRef,
-      icon: <MessageSquare className="w-4 h-4" />,
+      icon: <MessageSquare className="w-4 h-4 text-orange-400" />,
     },
   ];
 
@@ -132,14 +139,6 @@ export default function Home() {
                   </button>
                 ))}
               </nav>
-              <div className="flex justify-center gap-6 p-6 border-t border-slate-700">
-                <Button variant="ghost" size="icon">
-                  <Github className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <Mail className="w-5 h-5" />
-                </Button>
-              </div>
             </div>
           </motion.div>
         )}

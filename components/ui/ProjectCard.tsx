@@ -11,7 +11,8 @@ interface ProjectCardProps {
     description: string;
     image: string;
     tags: string[];
-    link: string;
+    deploy_link: string;
+    github_link: string;
   };
   index: number;
 }
@@ -65,21 +66,33 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             ))}
           </div>
           <div className="flex gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              className="w-fit border-slate-600 text-slate-300 hover:bg-slate-700"
+            <a
+              href={project.deploy_link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Project
-              <ExternalLink className="ml-2 w-4 h-4" />
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              className="w-fit border-slate-600 text-slate-300 hover:bg-slate-700"
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-fit border-slate-600 text-slate-300 hover:bg-slate-700"
+              >
+                View Project
+                <ExternalLink className="ml-2 w-4 h-4" />
+              </Button>
+            </a>
+            <a
+              href={project.github_link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Github className="w-4 h-4" />
-            </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-fit border-slate-600 text-slate-300 hover:bg-slate-700"
+              >
+                <Github className="w-4 h-4" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

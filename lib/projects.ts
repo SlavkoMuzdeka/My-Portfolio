@@ -1,36 +1,36 @@
-// Project data
 const projects = [
   {
-    title: "NeoVerse",
+    title: "Podcaster Chatbot",
     description:
-      "A virtual reality platform that allows users to create and explore immersive digital environments.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "Three.js", "WebXR", "Node.js"],
-    link: "#",
+      "This application creates AI chatbots that can access and utilize domain-specific knowledge from different podcasts.",
+    image: "/projects/chatbot_app.png",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "OpenAI",
+      "Pinecone",
+      "LangChain",
+      "Vercel",
+      "AI SDK",
+    ],
+    deploy_link: "https://podcaster-chatbot.vercel.app/",
+    github_link: "https://github.com/SlavkoMuzdeka/Podcaster-Chatbot",
   },
   {
-    title: "SynthMind AI",
+    title: "QuantMetric Dashboard",
     description:
-      "An AI-powered assistant that helps developers write better code through intelligent suggestions and automated refactoring.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Python", "TensorFlow", "Next.js", "GraphQL"],
-    link: "#",
-  },
-  {
-    title: "Quantum Dashboard",
-    description:
-      "A real-time analytics platform with advanced data visualization capabilities for enterprise applications.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Vue.js", "D3.js", "Firebase", "WebSockets"],
-    link: "#",
-  },
-  {
-    title: "HoloConnect",
-    description:
-      "A communication platform that uses augmented reality to enhance remote collaboration and virtual meetings.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React Native", "ARKit", "WebRTC", "Express"],
-    link: "#",
+      "This project, part of research, visualizes quant trading metrics, Alpha and Beta, to help traders optimize strategies with historical and real-time data.",
+    image: "/projects/quant_metric.png",
+    tags: [
+      "Python",
+      "Pandas",
+      "Plotly",
+      "Finance",
+      "Quantitative Analysis",
+      "Streamlit",
+    ],
+    deploy_link: "https://very-early-ventures-beta-analysis.streamlit.app/",
+    github_link: "https://github.com/SlavkoMuzdeka/Very-Early-Ventures-Beta",
   },
 ];
 

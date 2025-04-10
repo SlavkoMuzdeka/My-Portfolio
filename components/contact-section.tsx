@@ -67,9 +67,11 @@ export default function ContactSection({ contactRef }: ContactSectionProps) {
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-600/20 border border-blue-600/30 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-blue-400" />
-                  </div>
+                  <a href="mailto:muzdekaslavko@gmail.com">
+                    <div className="w-12 h-12 rounded-lg bg-blue-600/20 border border-blue-600/30 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-blue-400" />
+                    </div>
+                  </a>
                   <div>
                     <h4 className="text-lg font-medium mb-1">Email</h4>
                     <p className="text-slate-400">muzdekaslavko@gmail.com</p>
@@ -77,13 +79,19 @@ export default function ContactSection({ contactRef }: ContactSectionProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-600/20 border border-blue-600/30 flex items-center justify-center flex-shrink-0">
-                    <img
-                      src="location.png"
-                      alt="Location Icon"
-                      className="w-6 h-6 object-contain"
-                    />
-                  </div>
+                  <a
+                    href="https://www.google.com/maps/place/78000+Banja+Luka/@44.7786845,17.1237659,12z/data=!3m1!4b1!4m6!3m5!1s0x475e03062ccd6b05:0x73fe3280dfee195d!8m2!3d44.7721811!4d17.191!16zL20vMDIyMmtk?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="w-12 h-12 rounded-lg bg-blue-600/20 border border-blue-600/30 flex items-center justify-center flex-shrink-0">
+                      <img
+                        src="location.png"
+                        alt="Location Icon"
+                        className="w-6 h-6 object-contain"
+                      />
+                    </div>
+                  </a>
                   <div>
                     <h4 className="text-lg font-medium mb-1">Location</h4>
                     <p className="text-slate-400">

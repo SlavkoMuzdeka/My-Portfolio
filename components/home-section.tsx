@@ -36,12 +36,10 @@ const HomeSection: React.FC<HomeSectionProps> = ({
             className="flex flex-col gap-6"
           >
             <div className="inline-flex flex-wrap gap-2 px-4 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-sm font-mono">
-              <span className="text-blue-400">const</span> softwareEngineer ={" "}
-              {"{"}
-              <span className="text-green-400">"Backend"</span>,
+              <span className="text-blue-400">const</span> dev = {"{"}
+              <span className="text-green-400">"Full Stack"</span>,
               <span className="text-green-400">"Blockchain"</span>
               <span className="text-green-400">"AI"</span>
-              <span className="text-green-400">"Frontend"</span>
               {"}"};
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight font-sans">

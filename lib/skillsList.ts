@@ -159,4 +159,9 @@ export const skills = [
     icon: "linux.png",
     level: 80,
   },
+  {
+    name: "IPFS",
+    icon: "ipfs.png",
+    level: 85,
+  },
 ];
