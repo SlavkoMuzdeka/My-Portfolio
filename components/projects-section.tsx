@@ -33,10 +33,6 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projectsRef }) => {
             A selection of my recent development projects, showcasing technical
             expertise across various domains and technologies.
           </p>
-          {/* Coming Soon notice */}
-          {/* <div className="mt-4 text-slate-400 text-sm italic">
-            More projects coming soon...
-          </div> */}
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
