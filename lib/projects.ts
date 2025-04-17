@@ -153,6 +153,38 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/Intelligence-Machine",
   },
+  {
+    title: "Emotion Classifier App",
+    description:
+      "A web-based application that classifies text into emotional categories using a fine-tuned BERT model, with built-in summarization for long inputs.",
+    longDescription: `
+      <p>The Emotion Classifier App is an interactive NLP-based application designed to identify emotions in written text. Built as part of a Bachelor Thesis, the goal was to explore the use of pre-trained transformer models in emotion classification and text summarization tasks.</p>
+      
+      <p>Using a fine-tuned BERT model, the app categorizes user-submitted text into one of six emotional categories: <strong>Sadness</strong>, <strong>Joy</strong>, <strong>Love</strong>, <strong>Anger</strong>, <strong>Fear</strong>, and <strong>Surprise</strong>.</p>
+      
+      <p>Key features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Emotion Detection:</strong> Classifies text into one of the six predefined emotional categories using a fine-tuned transformer model.</li>
+        <li><strong>Text Summarization:</strong> Automatically summarizes inputs that exceed the model’s 512-token limit, ensuring compatibility and accurate classification.</li>
+        <li><strong>Flexible Input:</strong> Users can either type or paste text directly into the app or upload a text file for analysis.</li>
+        <li><strong>Interactive Interface:</strong> Classification results are displayed in a clear and user-friendly format, with graphical representations for better interpretability.</li>
+      </ul>
+      
+      <p>This project combines deep learning techniques with a practical user interface to showcase the real-world utility of NLP in understanding human emotions.</p>
+    `,
+    image: "/projects/emotion_classifier.png",
+    tags: [
+      "BERT",
+      "Transformers",
+      "Text Classification",
+      "Summarization",
+      "NLP",
+      "Streamlit",
+    ],
+    deploy_link: "",
+    github_link:
+      "https://github.com/SlavkoMuzdeka/Text-Classification---Bachelor-Thesis",
+  },
 ];
 
 export default projects;
