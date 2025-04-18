@@ -23,6 +23,7 @@ const projects = [
       "LangChain",
       "Vercel",
       "AI SDK",
+      "RAG",
     ],
     deploy_link: "https://podcaster-chatbot.vercel.app/",
     github_link: "https://github.com/SlavkoMuzdeka/Podcaster-Chatbot",
@@ -184,6 +185,37 @@ const projects = [
     deploy_link: "",
     github_link:
       "https://github.com/SlavkoMuzdeka/Text-Classification---Bachelor-Thesis",
+  },
+  {
+    title: "Day Planner Android App",
+    description:
+      "An intuitive mobile application for planning and organizing day-to-day activities, with multimedia support, travel visualization, and smart reminders.",
+    longDescription: `
+      <p>The Day Planner Android App offers users a seamless way to organize their daily routines, from professional tasks to travel and leisure activities. Developed with a focus on simplicity and flexibility, the app combines an interactive user experience with powerful backend support for storing and managing activity data.</p>
+      
+      <p>The app provides a highly customizable platform where users can input detailed information for each task, set up personalized notifications, and visualize travel plans on an integrated map.</p>
+      
+      <p>Key features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Activity Management:</strong> Store detailed activity data including title, time, description, and location.</li>
+        <li><strong>Multimedia Support:</strong> Attach images to free-form activities for richer context and visual memory.</li>
+        <li><strong>Travel Activity Visualization:</strong> Uses Google Maps API to display precise locations for planned trips and travel-based activities.</li>
+        <li><strong>Calendar View:</strong> Easily track scheduled items using a calendar layout or a chronological list view.</li>
+        <li><strong>Custom Reminders:</strong> User-defined notifications to ensure timely reminders for upcoming events.</li>
+        <li><strong>Settings Customization:</strong> Includes language preferences, notification settings, and localization support.</li>
+      </ul>
+    `,
+    image: "/projects/day_planner_app.png",
+    tags: [
+      "Android Studio",
+      "Java",
+      "SQLite",
+      "Google Maps API",
+      "Material Design",
+      "Mobile Development",
+    ],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/Day-Planner-Android-App",
   },
 ];
 
