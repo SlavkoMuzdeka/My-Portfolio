@@ -187,6 +187,50 @@ const projects = [
       "https://github.com/SlavkoMuzdeka/Text-Classification---Bachelor-Thesis",
   },
   {
+    title: "Anonymous Communication System",
+    description:
+      "A friendly web app that lets you message privately and stay anonymous by scattering your message pieces across multiple servers.",
+    longDescription: `
+      <p>Have you ever wanted to chat without leaving any digital footprints? The Anonymous Communication System makes it possible. It breaks each message into smaller parts and sends them through different channels—so only the intended recipient can piece everything back together.</p>
+      
+      <p>Here’s how it works in everyday terms:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li>You log in and see who else is online, just like a regular chat app.</li>
+        <li>When you pick someone to chat with, the app quietly swaps keys and certificates to set up a secure conversation.</li>
+        <li>Before sending, your message is chopped into several segments, each one wrapped in encryption and even optionally hidden inside an image.</li>
+        <li>Those segments travel independently through different servers, so no one service ever sees the full message.</li>
+        <li>On arrival, the pieces are decrypted and stitched back together on your friend’s side—clean, safe, and completely private.</li>
+      </ul>
+      
+      <p>Under the hood, we lean on modern tools:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>React</strong> for a smooth, responsive chat interface.</li>
+        <li><strong>Spring Boot</strong> powering our secure backend APIs.</li>
+        <li><strong>Apache ActiveMQ</strong> to ferry message segments reliably.</li>
+        <li><strong>MySQL</strong> for keeping user data safe and sound.</li>
+        <li><strong>Ant Design</strong> for clean, consistent UI components.</li>
+        <li><strong>Node.js</strong> to handle extra server-side logic.</li>
+        <li><strong>Maven</strong> to tie it all together with a neat build process.</li>
+      </ul>
+      
+      <p>Whether you’re sharing a secret or just value your privacy, this system has your back—quietly and securely.</p>
+    `,
+    image: "/projects/anonymous_communication.png",
+    tags: [
+      "React",
+      "Spring Boot",
+      "Apache ActiveMQ",
+      "MySQL",
+      "Ant Design",
+      "Node.js",
+      "Maven",
+      "Privacy",
+    ],
+    deploy_link: "",
+    github_link:
+      "https://github.com/SlavkoMuzdeka/Anonymous-Communication-System",
+  },
+  {
     title: "Day Planner Android App",
     description:
       "An intuitive mobile application for planning and organizing day-to-day activities, with multimedia support, travel visualization, and smart reminders.",
