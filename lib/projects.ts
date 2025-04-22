@@ -261,6 +261,36 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/Day-Planner-Android-App",
   },
+  {
+    title: "Data Structures & Algorithms Playground",
+    description:
+      "A hands‑on C language collection exploring core data structures and algorithms, from queues and stacks to trees and sorting techniques.",
+    longDescription: `
+      <p>Dive into the fundamentals of computer science with this C-based toolkit. Whether you’re visualizing student queue operations, decoding Morse code via a binary tree, or benchmarking classic sorting methods, this project makes abstract concepts tangible through interactive console programs.</p>
+      
+      <p>What you’ll find inside:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Queue & Stack Explorer:</strong> Load student records from CSV, manage them in a queue, peek and pop via stack operations, pick random entries, and even measure how long each operation takes.</li>
+        <li><strong>Morse Code Coder:</strong> Traverse a binary tree to translate characters to Morse code and back again, all through a straightforward menu-driven interface.</li>
+        <li><strong>Sorting Showcase:</strong> Run Shell, Heap, Insertion, and Bubble Sort on sample datasets and see execution times side by side — perfect for comparing algorithmic efficiency in real time.</li>
+      </ul>
+      
+      <p>Each module compiles with any standard C compiler and walks you through on-screen prompts, so you can experiment, learn, and see these foundational techniques in action.</p>
+    `,
+    image: "/projects/data_structures_algorithms.png",
+    tags: [
+      "C",
+      "Data Structures",
+      "Algorithms",
+      "Linked List",
+      "Binary Tree",
+      "Sorting",
+      "Console App",
+    ],
+    deploy_link: "",
+    github_link:
+      "https://github.com/SlavkoMuzdeka/Data-Structures-And-Algorithms",
+  },
 ];
 
 export default projects;
