@@ -291,6 +291,37 @@ const projects = [
     github_link:
       "https://github.com/SlavkoMuzdeka/Data-Structures-And-Algorithms",
   },
+  {
+    title: "e-Kindergarten",
+    description:
+      "A desktop application built in C# (WinForms) for managing kindergartens, including personnel, children, activities, and finances.",
+    longDescription: `
+      <p>The <strong>e-Kindergarten</strong> system is a Windows Forms desktop app designed to simplify the everyday operations of a kindergarten. It helps manage everything from child registration to staff records and daily scheduling. Built with a user-friendly interface and backed by a robust MySQL database, the app ensures secure data handling and efficient workflows.</p>
+  
+      <p>Administrators and clerks can log in with personalized accounts to manage tasks relevant to their role. Internationalization support and customizable themes make the system adaptable to different user preferences and language settings.</p>
+  
+      <p>Key features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Database Integration:</strong> Uses MySQL with config-based connection details, supporting 7–15 well-structured tables.</li>
+        <li><strong>User Accounts:</strong> Includes role-based access for administrators and clerks with secure login and authentication.</li>
+        <li><strong>Internationalization:</strong> UI supports English and an official regional language.</li>
+        <li><strong>User Preferences:</strong> Multiple themes/styles with saved preferences that load on login.</li>
+      </ul>
+    `,
+    image: "/projects/e_kindergarten.png",
+    tags: [
+      "C#",
+      ".NET",
+      "Windows Forms",
+      "MySQL",
+      "Desktop App",
+      "Internationalization",
+      "Role-Based Access",
+      "UI Theming",
+    ],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/e-Kindergarten",
+  },
 ];
 
 export default projects;

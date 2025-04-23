@@ -129,15 +129,15 @@ const AboutSection: React.FC<ProjectSectionProps> = ({ aboutRef }) => {
                 These days, I'm diving deep into the blockchain world and
                 working on AI-powered projects that bring intelligent automation
                 into real-world applications. I'm also doing full-stack web
-                development, which is where I have the most experience — it's
-                how I first got into tech and where I really learned how
-                everything fits together, from the backend to the frontend.
+                development, which is where I have the most experience. It's how
+                I first got into tech and where I really learned how everything
+                fits together, from the backend to the frontend.
               </p>
               <p>
                 When I'm not immersed in coding, I'm usually checking out the
                 latest tech trends, exploring new ideas, or working on side
                 projects. In my free time, I've also started exploring the world
-                of investing — particularly in crypto — which has become a
+                of investing (particularly in crypto), which has become a
                 growing interest of mine.
               </p>
               <p>
