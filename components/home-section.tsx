@@ -38,7 +38,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({
             <div className="inline-flex flex-wrap gap-2 px-4 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-sm font-mono">
               <span className="text-blue-400">const</span> engineer = {"{"}
               <span className="text-green-400">"Full Stack"</span>,
-              <span className="text-green-400">"Blockchain"</span>
+              <span className="text-green-400">"Blockchain"</span>,
               <span className="text-green-400">"AI"</span>
               {"}"};
             </div>

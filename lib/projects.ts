@@ -322,6 +322,37 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/e-Kindergarten",
   },
+  {
+    title: "Twitter-Trackr",
+    description:
+      "A Streamlit web app that tracks and stores liked tweets from specified Twitter accounts, with daily updates and interactive analysis.",
+    longDescription: `
+      <p><strong>Twitter-Trackr</strong> is a Python-based application that helps you keep an eye on the tweets your favorite accounts like. Whether you're doing research, analyzing trends, or just staying curious, this tool brings structure to Twitter's chaos.</p>
+      
+      <p>At its core, the app uses the Twitter API to fetch liked tweets from specified accounts and stores them in a <strong>SQLite</strong> database. With a neat <strong>Streamlit</strong> interface, you can explore likes visually and interactively.</p>
+  
+      <p>Key Features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Initial Load:</strong> Pulls in all liked tweets for specified Twitter handles.</li>
+        <li><strong>Daily Updates:</strong> Automatically syncs new liked tweets while pruning old ones to keep things fresh.</li>
+        <li><strong>Data Storage:</strong> Stores tweet data in a local SQLite database for fast querying.</li>
+        <li><strong>Interactive Exploration:</strong> View and filter liked tweets right from the web interface.</li>
+      </ul>
+  
+      <p>Perfect for Twitter analysts, journalists, or anyone tracking online sentiment and behavior over time.</p>
+    `,
+    image: "/projects/twitter_trackr.png",
+    tags: [
+      "Python",
+      "Twitter API",
+      "SQLite",
+      "Streamlit",
+      "Automation",
+      "Data Analysis",
+    ],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/Twitter-Trackr",
+  },
 ];
 
 export default projects;
