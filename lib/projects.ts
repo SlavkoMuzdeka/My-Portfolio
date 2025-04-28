@@ -353,6 +353,31 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/Twitter-Trackr",
   },
+  {
+    title: "CityGuessr Quiz App",
+    description:
+      "A WPF-based quiz game that challenges users to identify cities from images under a tight 10-second timer.",
+    longDescription: `
+      <p><strong>CityGuessr Quiz App</strong> is a fun and fast-paced geography game built with Windows Presentation Foundation (WPF). Players are shown an image of a famous city landmark and must choose the correct city name from three options.</p>
+      
+      <p>The game spans 10 unique rounds, each with its own city image and a 10-second countdown, testing both your world knowledge and quick thinking.</p>
+  
+      <p>Key Features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Interactive Quiz:</strong> Ten rounds of city-guessing fun with real photographs.</li>
+        <li><strong>Countdown Timer:</strong> A 10-second timer adds urgency and excitement to each question.</li>
+        <li><strong>WPF UI:</strong> Modern, responsive interface leveraging WPF for smooth animations and layout.</li>
+        <li><strong>Lightweight Design:</strong> No database required—just a standalone executable that’s easy to run.</li>
+        <li><strong>User-Friendly:</strong> Intuitive controls and feedback make the game accessible to all ages.</li>
+      </ul>
+      
+      <p>Whether you’re a geography buff or just looking for a quick brain teaser, CityGuessr makes exploring the world both educational and entertaining.</p>
+    `,
+    image: "/projects/cityguessr_app.png",
+    tags: ["WPF", "C#", "Quiz Game", "Geography", "Desktop App"],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/City-Guessr",
+  },
 ];
 
 export default projects;
