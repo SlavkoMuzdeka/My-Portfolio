@@ -378,6 +378,38 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/City-Guessr",
   },
+  {
+    title: "eKindergarten",
+    description:
+      "A Java desktop application with MySQL backend for managing kindergartens, personnel, children, groups, activities, and finances.",
+    longDescription: `
+      <p>The <strong>eKindergarten</strong> project delivers a modern, efficient system for kindergarten administration. Built in Java with a MySQL database, it handles everything from institution details to daily activity scheduling and financial transactions.</p>
+      
+      <p>Designed for ease of use, the application provides administrators with a clear interface for managing multiple kindergartens, staff, enrolled children, and their associated data.</p>
+  
+      <p>Key Features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Kindergarten Information:</strong> Track each location’s name, address, and contact details.</li>
+        <li><strong>Personnel Management:</strong> Store records for administrators and caregivers, including IDs, personal details, credentials, and compensation.</li>
+        <li><strong>Child Enrollment:</strong> Record child data—height, weight, medical history, and attendance times.</li>
+        <li><strong>Group Allocation:</strong> Assign children and caregivers to groups and monitor assignment durations.</li>
+        <li><strong>Activity Scheduling:</strong> Plan daily group activities with descriptions, dates, and durations.</li>
+        <li><strong>Membership Fees:</strong> Manage monthly fees per child—service type, amount due, and payment status.</li>
+        <li><strong>MySQL Integration:</strong> Secure, reliable storage and retrieval of all data via a MySQL relational database.</li>
+      </ul>
+    `,
+    image: "/projects/e_kindergarten_java.png",
+    tags: [
+      "Java",
+      "MySQL",
+      "Desktop App",
+      "Swing/JavaFX",
+      "CRUD",
+      "Data Management",
+    ],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/eKindergarten",
+  },
 ];
 
 export default projects;
