@@ -116,9 +116,9 @@ const projects = [
   {
     title: "Intelligence Machine: Conference & Company Scraper",
     description:
-      "A connected suite of tools that identifies conference speakers and tracks their career paths, providing notifications when they leave their companies—especially when they venture out to start their own.",
+      "A connected suite of tools that identifies conference speakers and tracks their career paths, providing notifications when they leave their companies, especially when they venture out to start their own.",
     longDescription: `
-      <p>The Intelligence Machine project is a comprehensive system designed to collect and analyze data related to conference speakers and their employment histories. Its primary goal is to identify speakers from selected conferences, monitor where they have worked, and notify users when these individuals leave their companies—especially when they embark on starting their own ventures.</p>
+      <p>The Intelligence Machine project is a comprehensive system designed to collect and analyze data related to conference speakers and their employment histories. Its primary goal is to identify speakers from selected conferences, monitor where they have worked, and notify users when these individuals leave their companies, especially when they embark on starting their own ventures.</p>
       
       <p>This project is composed of two interconnected modules:</p>
       
@@ -191,7 +191,7 @@ const projects = [
     description:
       "A friendly web app that lets you message privately and stay anonymous by scattering your message pieces across multiple servers.",
     longDescription: `
-      <p>Have you ever wanted to chat without leaving any digital footprints? The Anonymous Communication System makes it possible. It breaks each message into smaller parts and sends them through different channels—so only the intended recipient can piece everything back together.</p>
+      <p>Have you ever wanted to chat without leaving any digital footprints? The Anonymous Communication System makes it possible. It breaks each message into smaller parts and sends them through different channels, so only the intended recipient can piece everything back together.</p>
       
       <p>Here’s how it works in everyday terms:</p>
       <ul class="list-disc pl-5 space-y-2 my-3">
@@ -199,7 +199,7 @@ const projects = [
         <li>When you pick someone to chat with, the app quietly swaps keys and certificates to set up a secure conversation.</li>
         <li>Before sending, your message is chopped into several segments, each one wrapped in encryption and even optionally hidden inside an image.</li>
         <li>Those segments travel independently through different servers, so no one service ever sees the full message.</li>
-        <li>On arrival, the pieces are decrypted and stitched back together on your friend’s side—clean, safe, and completely private.</li>
+        <li>On arrival, the pieces are decrypted and stitched back together on your friend’s side, clean, safe, and completely private.</li>
       </ul>
       
       <p>Under the hood, we lean on modern tools:</p>
@@ -213,7 +213,7 @@ const projects = [
         <li><strong>Maven</strong> to tie it all together with a neat build process.</li>
       </ul>
       
-      <p>Whether you’re sharing a secret or just value your privacy, this system has your back—quietly and securely.</p>
+      <p>Whether you’re sharing a secret or just value your privacy, this system has your back quietly and securely.</p>
     `,
     image: "/projects/anonymous_communication.png",
     tags: [
@@ -272,7 +272,7 @@ const projects = [
       <ul class="list-disc pl-5 space-y-2 my-3">
         <li><strong>Queue & Stack Explorer:</strong> Load student records from CSV, manage them in a queue, peek and pop via stack operations, pick random entries, and even measure how long each operation takes.</li>
         <li><strong>Morse Code Coder:</strong> Traverse a binary tree to translate characters to Morse code and back again, all through a straightforward menu-driven interface.</li>
-        <li><strong>Sorting Showcase:</strong> Run Shell, Heap, Insertion, and Bubble Sort on sample datasets and see execution times side by side — perfect for comparing algorithmic efficiency in real time.</li>
+        <li><strong>Sorting Showcase:</strong> Run Shell, Heap, Insertion, and Bubble Sort on sample datasets and see execution times side by side. This is perfect for comparing algorithmic efficiency in real time.</li>
       </ul>
       
       <p>Each module compiles with any standard C compiler and walks you through on-screen prompts, so you can experiment, learn, and see these foundational techniques in action.</p>
@@ -367,7 +367,7 @@ const projects = [
         <li><strong>Interactive Quiz:</strong> Ten rounds of city-guessing fun with real photographs.</li>
         <li><strong>Countdown Timer:</strong> A 10-second timer adds urgency and excitement to each question.</li>
         <li><strong>WPF UI:</strong> Modern, responsive interface leveraging WPF for smooth animations and layout.</li>
-        <li><strong>Lightweight Design:</strong> No database required—just a standalone executable that’s easy to run.</li>
+        <li><strong>Lightweight Design:</strong> No database required, just a standalone executable that’s easy to run.</li>
         <li><strong>User-Friendly:</strong> Intuitive controls and feedback make the game accessible to all ages.</li>
       </ul>
       
@@ -391,10 +391,10 @@ const projects = [
       <ul class="list-disc pl-5 space-y-2 my-3">
         <li><strong>Kindergarten Information:</strong> Track each location’s name, address, and contact details.</li>
         <li><strong>Personnel Management:</strong> Store records for administrators and caregivers, including IDs, personal details, credentials, and compensation.</li>
-        <li><strong>Child Enrollment:</strong> Record child data—height, weight, medical history, and attendance times.</li>
+        <li><strong>Child Enrollment:</strong> Record child data, such as height, weight, medical history, and attendance times.</li>
         <li><strong>Group Allocation:</strong> Assign children and caregivers to groups and monitor assignment durations.</li>
         <li><strong>Activity Scheduling:</strong> Plan daily group activities with descriptions, dates, and durations.</li>
-        <li><strong>Membership Fees:</strong> Manage monthly fees per child—service type, amount due, and payment status.</li>
+        <li><strong>Membership Fees:</strong> Manage monthly fees per child, such as service type, amount due, and payment status.</li>
         <li><strong>MySQL Integration:</strong> Secure, reliable storage and retrieval of all data via a MySQL relational database.</li>
       </ul>
     `,
@@ -409,6 +409,31 @@ const projects = [
     ],
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/eKindergarten",
+  },
+  {
+    title: "Railway Traffic Simulation",
+    description:
+      "A Java multi-threaded simulation demonstrating concurrent train and vehicle movement with collision detection and dynamic configuration.",
+    longDescription: `
+    <p>The <strong>Railway Traffic Simulation</strong> project explores the power and challenges of concurrent programming in Java by simulating trains and road vehicles moving on a shared 2D map. Each train and vehicle runs in its own thread, showcasing real-time interactions, collision handling, and synchronized access to shared tracks and roads.</p>
+    
+    <p>Users can define simulation parameters (maximum speeds, number of vehicles, and log file paths) via external configuration files, making the system highly adaptable.</p>
+
+    <p>Key Features include:</p>
+    <ul class="list-disc pl-5 space-y-2 my-3">
+      <li><strong>Concurrent Movement:</strong> Independent threads for each train and vehicle, enabling simultaneous motion on rails and roads.</li>
+      <li><strong>Collision Detection & Avoidance:</strong> Thread synchronization to detect and manage collisions at level crossings and intersections.</li>
+      <li><strong>Realistic Attributes:</strong> Trains (steam, diesel, electric) and vehicles (brand, model, speed) behave according to their defined parameters.</li>
+      <li><strong>Dynamic Configuration:</strong> Read external files to adjust speeds, vehicle counts, and logging paths at runtime.</li>
+      <li><strong>Visual Simulation:</strong> GUI displays real-time positions, speeds, and path histories of all trains and vehicles on the network.</li>
+    </ul>
+    
+    <p>This simulation provides a hands-on demonstration of thread-based parallelism and synchronization techniques in complex transportation scenarios.</p>
+  `,
+    image: "/projects/railway_traffic_simulation.png",
+    tags: ["Java", "Concurrency", "Threads", "Eclipse", "GUI"],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/Railway-Traffic-Simulation",
   },
 ];
 
