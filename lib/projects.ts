@@ -435,6 +435,31 @@ const projects = [
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/Railway-Traffic-Simulation",
   },
+  {
+    title: "Diamond Circle",
+    description:
+      "A Java-based multiplayer board game that demonstrates concurrency using threads for figure movement, diamond placement, and card drawing.",
+    longDescription: `
+  <p>The <strong>Diamond Circle</strong> game project explores concurrent programming in Java through the development of a dynamic multiplayer board game. Each figure, diamond, and card-drawing action is managed using separate threads, enabling real-time, parallel interactions among game components.</p>
+
+  <p>Players interact with the board simultaneously, drawing cards and moving figures while ghost figures and special actions are processed concurrently in the background. The system emphasizes thread safety, synchronization, and responsive UI updates to maintain a seamless gameplay experience.</p>
+
+  <p>Key Features include:</p>
+  <ul class="list-disc pl-5 space-y-2 my-3">
+    <li><strong>Thread Management:</strong> Each action (figure movement, diamond spawning, and card drawing) is handled by separate threads.</li>
+    <li><strong>Synchronization:</strong> Shared resources like the board and player stats are synchronized to prevent race conditions.</li>
+    <li><strong>Parallel Gameplay:</strong> Enables parallel moves and updates, reflecting the pace of real-time multiplayer games.</li>
+    <li><strong>Thread Safety:</strong> Proper mechanisms ensure thread-safe interactions and data integrity throughout the game.</li>
+    <li><strong>Real-time Interactions:</strong> Player figures move based on card logic and respond immediately to player input.</li>
+  </ul>
+
+  <p>The project highlights essential concurrency patterns and techniques in Java, applying them to an engaging and visually interactive game.</p>
+  `,
+    image: "/projects/diamond_circle.png",
+    tags: ["Java", "Concurrency", "Threads", "GUI"],
+    deploy_link: "",
+    github_link: "https://github.com/SlavkoMuzdeka/Diamond-Circle",
+  },
 ];
 
 export default projects;
