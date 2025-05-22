@@ -77,8 +77,8 @@ const projects = [
     `,
     image: "/projects/podcast_summarizer.png",
     tags: ["Python", "Streamlit", "OpenAI", "RSS Feeds"],
-    deploy_link: "https://podcast-summarizer-ai.streamlit.app/",
-    github_link: "https://github.com/SlavkoMuzdeka/Podcast_Summarizer_AI",
+    deploy_link: "https://podcast-summarizer-frontend.vercel.app/",
+    github_link: "https://github.com/SlavkoMuzdeka/podcast-summarizer",
   },
   {
     title: "Crypto Investment Dashboard",
@@ -459,6 +459,39 @@ const projects = [
     tags: ["Java", "Concurrency", "Threads", "GUI"],
     deploy_link: "",
     github_link: "https://github.com/SlavkoMuzdeka/Diamond-Circle",
+  },
+  {
+    title: "Merge Sort & Tim Sort Optimization",
+    description:
+      "An in-depth exploration and optimization of Merge Sort and Tim Sort algorithms using compiler techniques and parallelization.",
+    longDescription: `
+  <p>This project focuses on the implementation and optimization of two widely-used sorting algorithms: <strong>Merge Sort</strong> and <strong>Tim Sort</strong>. The goal is to enhance their performance through compiler optimizations, parallel execution, and careful algorithm tuning.</p>
+
+  <p>It includes step-by-step performance analysis and real-time benchmarking to identify bottlenecks and validate the impact of optimization strategies. Compiler techniques like loop unrolling, vectorization, and inline expansion were used, along with parallelism strategies such as thread-based and task-based models.</p>
+
+  <p>Key Features include:</p>
+  <ul class="list-disc pl-5 space-y-2 my-3">
+    <li><strong>Compiler Optimizations:</strong> Improved execution time via low-level enhancements like loop unrolling and adaptive merging.</li>
+    <li><strong>Parallelization:</strong> Implemented thread-based versions of Merge Sort and Tim Sort to achieve substantial speedup on multi-core processors.</li>
+    <li><strong>Combined Strategies:</strong> Merged compiler-level and parallel techniques for maximum performance gain.</li>
+    <li><strong>Benchmarking:</strong> Measured and visualized performance improvements across different scenarios and configurations.</li>
+    <li><strong>Unit Testing:</strong> Developed a test suite to ensure the correctness of all sorting implementations under various edge cases.</li>
+  </ul>
+
+  <p>The project highlights the synergy of algorithmic optimization and concurrent computing in performance-critical applications.</p>
+  `,
+    image: "/projects/sort_optimization.png",
+    tags: [
+      "Algorithms",
+      "Optimization",
+      "Parallelism",
+      "Merge Sort",
+      "Tim Sort",
+      "C++",
+    ],
+    deploy_link: "#",
+    github_link:
+      "https://github.com/SlavkoMuzdeka/Parallelizable-Algorithm-Optimization-and-Parallelization",
   },
 ];
 
