@@ -493,6 +493,40 @@ const projects = [
     github_link:
       "https://github.com/SlavkoMuzdeka/Parallelizable-Algorithm-Optimization-and-Parallelization",
   },
+  {
+    title: "ISA Simulator",
+    description:
+      "A hands-on simulator that runs custom assembly code and helps visualize how low-level instructions work under the hood.",
+    longDescription: `
+      <p>This project is all about building a simulator for a custom instruction set architecture (ISA). It's designed to let you write, load, and execute assembly code, while giving you full control and insight into how instructions interact with memory, registers, and the CPU.</p>
+
+      <p>The idea was to create an environment where you can experiment with how machines actually execute code — no magic, just raw instructions and memory handling. Whether you're stepping through a program instruction-by-instruction or watching how conditional branches behave, this simulator brings it all to life.</p>
+
+      <p>Key Features include:</p>
+      <ul class="list-disc pl-5 space-y-2 my-3">
+        <li><strong>Instruction Execution:</strong> Acts as an interpreter for a simple, custom-made assembly language.</li>
+        <li><strong>Assembly File Loader:</strong> Load your own '.asm' files and see how they run line by line.</li>
+        <li><strong>Error Handling:</strong> Basic syntax and semantic checks to catch common mistakes early.</li>
+        <li><strong>Memory + Registers:</strong> Simulates 64-bit memory addressing and register operations with support for MOV, ADD, SUB, AND, OR, NOT, and more.</li>
+        <li><strong>Branching Logic:</strong> Supports jumps and conditionals like JE, JNE, CMP, etc. — just like a real CPU.</li>
+        <li><strong>Debugging Mode:</strong> Step through your code, check register values, memory content, and set breakpoints with ease.</li>
+      </ul>
+
+      <p>It’s a great project for anyone interested in system-level programming, CPU design, or just curious about how code turns into actions at the hardware level.</p>
+    `,
+    image: "/projects/isa_simulator.png",
+    tags: [
+      "Instruction Set Architecture",
+      "Assembly",
+      "Systems Programming",
+      "Simulation",
+      "Debugging",
+      "Java",
+    ],
+    deploy_link: "#",
+    github_link:
+      "https://github.com/SlavkoMuzdeka/Instruction-Set-Architecture-Simulator",
+  },
 ];
 
 export default projects;
